@@ -29,32 +29,24 @@ scissors = '''
 import random
 
 hand_signals = [rock, paper, scissors]
-player_choose = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
-print(hand_signals[player_choose])
+player_choise = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
+print(hand_signals[player_choise])
 
-comp_choose = random.randint(0, 2)
-print(hand_signals[comp_choose])
+comp_choise = random.randint(0, 2)
+print(f"Computer choose {hand_signals[comp_choise]}")
 
-if player_choose == 0 and comp_choose == 2:
+if player_choise == 0 and comp_choise == 2:
   print("You win!")
-elif player_choose == 2 and comp_choose == 1:
+elif player_choise == 2 and comp_choise == 1:
   print("You win!")
-elif player_choose == 1 and comp_choose == 0:
+elif player_choise == 1 and comp_choise == 0:
   print("You win!")
-elif player_choose == comp_choose:
+elif player_choise == comp_choise:
   print("It's a drawn")
 else:
   print("You loose")    
-# if player_choose == 0 and comp_choose == 0:
-#   print("It's a drawn")
-# elif player_choose == 0 and comp_choose == 2:
-#   print("You win")
-# else:
-#   print("You loose")
 
-# if player_choose == 1 and comp_choose == 1:
-#   print("It's a drawn")
-# elif player_choose ==   
+ 
 
     
 
