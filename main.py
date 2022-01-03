@@ -44,7 +44,7 @@ elif player_choise == 1 and comp_choise == 0:
 elif player_choise == comp_choise:
   print("It's a drawn")
 else:
-  print("You loose")    
+  print("You lose")    
 
  
 
