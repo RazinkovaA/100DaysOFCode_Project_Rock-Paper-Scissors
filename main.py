@@ -30,20 +30,23 @@ import random
 
 hand_signals = [rock, paper, scissors]
 player_choise = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
-print(hand_signals[player_choise])
+if player_choise >= 3 or player_choise < 0:
+  print("You typed an invalid number. You lose!")
+else:  
+ print(hand_signals[player_choise])
 
-comp_choise = random.randint(0, 2)
-print(f"Computer choose {hand_signals[comp_choise]}")
+ comp_choise = random.randint(0, 2)
+ print(f"Computer choose {hand_signals[comp_choise]}")
 
-if player_choise == 0 and comp_choise == 2:
+ if player_choise == 0 and comp_choise == 2:
   print("You win!")
-elif player_choise == 2 and comp_choise == 1:
+ elif player_choise == 2 and comp_choise == 1:
   print("You win!")
-elif player_choise == 1 and comp_choise == 0:
+ elif player_choise == 1 and comp_choise == 0:
   print("You win!")
-elif player_choise == comp_choise:
+ elif player_choise == comp_choise:
   print("It's a drawn")
-else:
+ else:
   print("You lose")    
 
  
